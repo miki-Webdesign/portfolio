@@ -108,7 +108,6 @@ header .logo a {
   }
 }
 
-/* 全画面の背景 */
 body {
   background-image: url("../assets/img/Home_img/sky_main2.jpg");
   background-size: 100% 100%;
@@ -117,7 +116,6 @@ body {
   background-attachment: scroll;
 }
 
-/* AbouMeの背景 */
 .about-body {
   background-image: url("../assets/img/AboutMe_img/sky_about2.jpg");
   background-size: 100% 100%;
@@ -126,7 +124,6 @@ body {
   background-attachment: scroll;
 }
 
-/* illustrationの背景 */
 .illust-body {
   background-image: url("../assets/img/Illustration_img/sky_illust2.jpg");
   background-size: 100% 100%;
@@ -161,13 +158,12 @@ body {
 .hero h1 { margin: 0;}
 .hero p { margin: 0; font-size: 25px; line-height: 1.6; opacity: 0.9; }
 .hero-text {
-  display: flex;           /* ← これ追加 */
-  flex-direction: column;  /* ← 子要素を縦に並べる */
-  align-items: center;     /* ← 真ん中寄せ */
-  gap: 50px;               /* ← この余白が効くようになる */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 } 
 
-/* スマホ用 */
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 30px;
@@ -189,7 +185,6 @@ body {
   height: auto;
 }
 
-/* HomeのWorks */
 .works {
   height: 100vh;
   display: flex;
@@ -250,14 +245,13 @@ body {
   color: #fff; 
 }
 
-/* スマホ対応：画面幅が768px以下なら1列に */
 @media screen and (max-width: 768px) {
   .works-list {
-    grid-template-columns: 1fr; /* 1列にする */
+    grid-template-columns: 1fr;
   }
 
   .work-card img {
-    max-width: 90%; /* 画面に合わせて縮小 */
+    max-width: 90%;
   }
 }
 
@@ -265,7 +259,6 @@ body {
   opacity: 0.7;
 }
 
-/*HomeのAboutMe*/
 #about {
   padding: 100px 20px;
   text-align: center;
@@ -338,7 +331,6 @@ body {
   opacity: 0.7;
 }
 
-/* スマホ用 */
 @media screen and (max-width: 768px) {
   .skills {
     margin: 0 10px 50px 10px;
@@ -370,7 +362,6 @@ body {
   }
 }
 
-/* Contact */
 #contact {
   text-align: center;
   padding: 80px 20px;
@@ -402,11 +393,10 @@ body {
 }
 
 .mail-btn:hover {
-  background: #fbd6c4; /* ホバーでピンク */
+  background: #fbd6c4;
   color: #fff;
 }
 
-/* スマホ用 */
 @media screen and (max-width: 768px) {
   #contact h2 {
     font-size: 50px;
@@ -422,7 +412,6 @@ body {
   }
 }
 
-/*ここからWorksページ*/
 .works-detail {
   max-width: 1000px;
   margin: 200px auto 200px;
@@ -457,17 +446,29 @@ body {
     margin: 0 auto;
     display: block;
   }
-
 }
 
-/*works5専用*/
+.QR{
+  font-size: 23px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto; 
+}
+
+.works-images-QR img{
+  width: 60%;
+}
+
 .works5-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3分割 */
   gap: 20px;
 }
 
-/*works6専用*/
 .works6-list .works-item .works-img {
   display: flex;
   flex-flow: column;
@@ -475,9 +476,8 @@ body {
   margin-bottom: 60px;
 }
 
-/*works6専用*/
 .works6-list .works-item {
-  margin-bottom: 300px; /* ブロック間の余白を大きめに */
+  margin-bottom: 300px;
 }
 
 .works-images img {
@@ -485,14 +485,12 @@ body {
   height: auto;
 }
 
-/*works5専用*/
 .works5-images img {
   width: 100%;
   height: auto;
   display: block; 
 }
 
-/* works6名刺専用 */
 .works6-list .works-item .works-img-meishi {
   display: flex;
   flex-direction: row;
@@ -500,7 +498,7 @@ body {
 }
 
 .works6-list .works-item .works-img-meishi img {
-  width: 50%;  /* 横2枚を半分ずつ */
+  width: 50%;
   height: auto;
   display: block;
 }
@@ -540,7 +538,6 @@ body {
   opacity: 0.7;
 }
 
-/* スマホ用 */
 @media screen and (max-width: 768px) {
 .works-section p,
 .works-section ul {
@@ -556,9 +553,13 @@ body {
   font-size: 28px;
 }
 
+.QR{
+  flex-direction: column;
+  text-align: center;
 }
 
-/* ここからAbouMe */
+}
+
 .about-hero h1 {
   font-size: 60px;
   text-align: center;
@@ -582,10 +583,9 @@ body {
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap; /* スマホでは縦並びになる */
+  flex-wrap: wrap;
 }
 
-/* テキスト部分 */
 .about-text {
   flex: 1;
   min-width: 300px;
@@ -593,7 +593,7 @@ body {
   line-height: 1.8;
   color: #6D564B;
   padding-left: 30px;
-  border-left: 3px solid #fff; /* 縦線を追加 */
+  border-left: 3px solid #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -634,19 +634,19 @@ body {
 }
 
 .icon-list {
-  display: flex;              /* 横並び */
-  justify-content: center;    /* 中央揃え */
-  gap: 20px;                  /* アイコン同士の間隔 */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 100px;
-  margin-bottom: 200px;           /* 上に余白 */
-  flex-wrap: wrap;            /* 画面幅が狭いとき折り返す */
+  margin-bottom: 200px;
+  flex-wrap: wrap;
 }
 
 .icon img {
-  width: 150px;      /* サイズ指定 */
+  width: 150px;
   height: 150px;
-  border-radius: 50%; /* 正円にする */
-  object-fit: cover; /* はみ出したら切り取り */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .illust-hero h1 {
@@ -666,23 +666,23 @@ body {
 
 .illust-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4列に分割 */
-  gap: 10px;                  /* アイコン同士の間隔 */
-  justify-items: center; /* 横方向の中央揃え */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
   margin: 40px auto 200px ;
-  max-width: 1000px; /* 全体の最大幅（必要に応じて調整） */
+  max-width: 1000px;
 }
 
 .illust img {
-  width: 230px;      /* サイズ指定 */
+  width: 230px;
   height: auto;
-  object-fit: cover; /* はみ出したら切り取り */
+  object-fit: cover;
 }
 
 .illust-png img {
-  width: 190px;      /* サイズ指定 */
+  width: 190px;
   height: auto;
-  object-fit: cover; /* はみ出したら切り取り */
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -695,13 +695,13 @@ body {
   }
 
   .illust-list {
-    grid-template-columns: repeat(2, 1fr); /* 2列に変更 */
-    gap: 15px; /* 間隔を少し広めにしても◎ */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .illust img,
   .illust-png img {
-    width: 100%;  /* 列幅に合わせて自動縮小 */
-    max-width: 180px; /* 大きすぎ防止で上限を設定してもOK */
+    width: 100%;
+    max-width: 180px;
   }
 }
