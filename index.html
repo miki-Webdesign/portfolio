@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIKI SAWAHARA PORTFOLIO</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <!-- ヘッダー（全画面） -->
+<header>
+  <h1 class="logo">
+     <a href="#top">MIKI<br>SAWAHARA</a>
+  </h1>
+  <!-- チェックボックス追加 -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- ハンバーガーアイコン -->
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="AboutMe/index.html">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <!-- ヒーロー（全画面） -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>MIKI SAWAHARA<br>PORTFOLIO</h1>
+      <p>はじめまして<br>Webデザイナーを目指しています<br>サワハラ ミキ です<br>私のポートフォリオ<br>よろしければ見ていってください</p>
+      <a href="#about" class="scroll-logo">
+      <img src="assets/img/Home_img/Scroll Down Logo.png" alt="Scroll Down Logo">
+    </a>
+    </div>
+  </section>
+<!--ここからWorks-->
+<section id="works">
+  <h2>Works</h2>
+  <div class="works-list">
+    <!-- 作品アイテムをここに並べる -->
+      <div class="work-card">
+      <a href="Works/Works1/index.html" class="work-card">
+      <img src="assets/img/Home_img/Banner_mock-up.png" alt="Work 1">
+      <p class="work-title">バナー広告</p>
+      <p class="work-desc">サンプルバナー集</p></a>
+      </div>
+      <div class="work-card">
+      <a href="Works/Works2/index.html" class="work-card">
+      <img src="assets/img/Home_img/minamoshika_mock-up.png" alt="Work 2">
+      <p class="work-title">ランディングページ</p>
+      <p class="work-desc">クリニックHP</p></a>
+    </div>
+    <div class="work-card">
+      <a href="Works/Works3/index.html" class="work-card">
+      <img src="assets/img/Home_img/Greenact_mock-up.png" alt="Work 3">
+      <p class="work-title">ランディングページ</p>
+      <p class="work-desc">コーポレートサイト</p></a>
+    </div>
+    <div class="work-card">
+      <a href="Works/Works4/index.html" class="work-card">
+      <img src="assets/img/Home_img/Portfolio_mock-up.png" alt="Work 4">
+      <p class="work-title">Webページ</p>
+      <p class="work-desc">ポートフォリオ</p></a>
+    </div>
+    <div class="work-card">
+      <a href="Works/Works5/index.html" class="work-card">
+      <img src="assets/img/Home_img/WLCare_mock-up.png" alt="Work 5">
+      <p class="work-title">ランディングページ</p>
+      <p class="work-desc">シャンプー販売ページ</p></a>
+    </div>
+    <div class="work-card">
+      <a href="Works/Works6/index.html" class="work-card">
+      <img src="assets/img/Home_img/thumbnailmock-up.jpg" alt="Work 6">
+      <p class="work-title">その他</p>
+      <p class="work-desc">そのほか制作物</p></a>
+    </div>
+  </div>
+  </section>
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <!-- 自分のイラスト -->
+  <div class="about-illustration">
+    <img src="assets/img/Home_img/Abou Avater.png" alt="自分のイラスト">
+  </div>
+
+  <!-- スキル表 -->
+  <div class="skills">
+    <div class="skill-item">
+      <span class="skill-name">Figma</span>
+      <span class="skill-desc">LPやWebサイトのUIデザイン、ワイヤーフレーム作成。下層ページを含む構成設計できます</span>
+    </div>
+    <div class="skill-item">
+      <span class="skill-name">Photoshop</span>
+      <span class="skill-desc">LP・バナー制作、写真補正や合成などの画像加工できます</span>
+    </div>
+    <div class="skill-item">
+      <span class="skill-name">Illustrator</span>
+      <span class="skill-desc">チラシ・ポスターなど印刷物デザインできます</span>
+    </div>
+    <div class="skill-item">
+      <span class="skill-name">HTML/CSS</span>
+      <span class="skill-desc">レスポンシブ対応のWebページを構築できます</span>
+    </div>
+    <div class="skill-item">
+      <span class="skill-name">Adobe Fresco<br>ibis Paint</span>
+      <span class="skill-desc">手描きイラストやアイコンをデジタル制作しています<br>
+       <a href="Illustration/index.html" class="skill-note">趣味で描いているイラスト置き場→</a></span>
+    </div>
+  </div>
+
+  <!-- プロフィール詳細へのリンク -->
+  <div class="profile-link">
+    <a href="../../AboutMe/index.html">詳しいプロフィールはこちら→</a>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>下記のメールアドレスまでご連絡お待ちしております。</p>
+  <p>※クリックするとお使いのメールアプリが起動します</p>
+
+  <a href="mailto:mi0523fut@gmail.com" class="mail-btn">
+    mi0523fut@gmail.com
+  </a>
+</section>
+</body>
+</html>
